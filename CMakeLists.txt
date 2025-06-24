@@ -20,14 +20,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CUDA_STANDARD 17)
 set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 
-"""
-指定目标 GPU 架构（计算能力版本），覆盖从 Maxwell 到 Ampere 的多代显卡：
- - 50/52: Maxwell (GTX 9xx)
- - 60/61: Pascal (GTX 10xx)
- - 70/72/75: Volta/Turing (Titan V, RTX 20xx)
- - 80/86/87/89/90: Ampere (RTX 30xx, A100)
- - 100/101/120: Hopper (H100)
-"""
+# """
+# 指定目标 GPU 架构（计算能力版本），覆盖从 Maxwell 到 Ampere 的多代显卡：
+#  - 50/52: Maxwell (GTX 9xx)
+#  - 60/61: Pascal (GTX 10xx)
+#  - 70/72/75: Volta/Turing (Titan V, RTX 20xx)
+#  - 80/86/87/89/90: Ampere (RTX 30xx, A100)
+#  - 100/101/120: Hopper (H100)
+# """
 set(CMAKE_CUDA_ARCHITECTURES 60 61 70 72 75 80 86 87 89 90 100 101 120)
 
 # 设置 CUDA 编译器选项
